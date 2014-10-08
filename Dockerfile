@@ -10,7 +10,7 @@ ENV LC_ALL en_US.UTF-8
 
 RUN apt-get -qq update
 RUN apt-get -yqq upgrade
-RUN apt-get -yqq install supervisor python-pip
+RUN apt-get -yqq install vim mc curl wget less supervisor python-pip
 RUN pip install supervisor-stdout
 
 ADD locale /etc/default/locale
