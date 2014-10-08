@@ -10,10 +10,12 @@ ENV LC_ALL en_US.UTF-8
 
 RUN apt-get -qq update
 RUN apt-get -yqq upgrade
-RUN apt-get -yqq install supervisor
+RUN apt-get -yqq install supervisor python-pip
+RUN pip install supervisor-stdout
 
 ADD locale /etc/default/locale
 ADD supervisord.conf /etc/supervisor/supervisord.conf
+ADD sv_stdout.conf /etc/supervisor/conf.d/
 
 RUN locale-gen en_US.UTF-8 && dpkg-reconfigure locales
 
