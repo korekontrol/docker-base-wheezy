@@ -1,7 +1,7 @@
 # base - Base Image with supervisord
 
-FROM ubuntu:trusty
-MAINTAINER David Zumbrunnen <zumbrunnen@gmail.com>
+FROM tianon/debian:wheezy
+MAINTAINER Marek Obuchowicz <marek@korekontrol.eu>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG en_US.utf8

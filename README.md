@@ -1,7 +1,7 @@
-docker-base
+docker-base-wheezy
 ===========
 
-Base Image for Docker. It includes:
+Base Image based on Debian Wheezy for Docker. It includes:
 
 * `supervisord`
 * Locale fixes
