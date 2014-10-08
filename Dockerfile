@@ -4,20 +4,18 @@ FROM tianon/debian:wheezy
 MAINTAINER Marek Obuchowicz <marek@korekontrol.eu>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV LANG en_US.utf8
-ENV LANGUAGE en_US:en
+ENV LANGUAGE en_US.UTF-8
+ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
 # Base system setup
 RUN apt-get -qq update
 RUN apt-get -yqq upgrade
-RUN apt-get -yqq install apt-utils
+RUN apt-get -yqq install apt-utils locales locales-all
 ADD locale /etc/default/locale
-RUN locale-gen en_US.UTF-8 && dpkg-reconfigure locales
-
 
 # Basic packages
-RUN apt-get -yqq vim mc curl wget less python-pip
+RUN apt-get -yqq install vim mc curl wget less python-pip
 
 # Supervisor
 RUN apt-get -yqq install supervisor
