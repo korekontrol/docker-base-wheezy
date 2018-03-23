@@ -7,3 +7,9 @@ Base Image based on Debian Wheezy for Docker. It includes:
 * python-pip
 * `supervisord`
 * Locale fixes
+
+## Credits
+Created by [Marek Obuchowicz](https://github.com/marek-obuchowicz) for [KoreKontrol Spryker Dev VM](https://www.korekontrol.eu/) project.
+
+## License
+[APACHE](LICENSE)

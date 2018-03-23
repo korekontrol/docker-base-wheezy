@@ -1,6 +1,6 @@
 # base - Base Image with supervisord
 
-FROM tianon/debian:wheezy
+FROM debian:wheezy
 MAINTAINER Marek Obuchowicz <marek@korekontrol.eu>
 
 ENV DEBIAN_FRONTEND noninteractive
