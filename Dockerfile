@@ -1,7 +1,6 @@
 # base - Base Image with supervisord
 
 FROM debian:wheezy
-MAINTAINER Marek Obuchowicz <marek@korekontrol.eu>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANGUAGE en_US.UTF-8
